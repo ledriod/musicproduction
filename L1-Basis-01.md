@@ -77,6 +77,33 @@ __Channel messages:__
   - Reset all controllers  
 
 
+### Channel voice messages
+
+Channel voice messages carry information about the performance; for example, which notes we played and how hard we pressed the trigger on the controller.
+
+__Note on__  
+This message is sent every time you press a key on a MIDI controller. includes information:
+- note pressed (ranges from 0 to 127 or C2 to G8)
+- MIDI channel (1–16)
+- velocity (how hard you press the key, from 0 to 127, 0 - silence)
+
+__Note off__  
+message is sent when you release the key of the controller
+- note released (ranges from 0 to 127 or C2 to G8)
+- MIDI channel (1–16)
+- velocity (how hard you released the key, from 0 to 127, 0 - silence)
+
+
+Monophonic aftertouch
+
+Polyphonic aftertouch
+
+Control changes
+
+Pitch bend
+
+Program change
+
 
 
 
