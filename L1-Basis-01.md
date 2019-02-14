@@ -15,7 +15,11 @@
 - Standard MIDI files
 
 
-![Daisy-chain setup (Courtesy of Apple Inc.)](L1-Basis/L1-Basis-01-01.jpg)
+![01](L1-Basis/L1-Basis-01-01.jpg)
+Midi Chain network
+
+![02](L1-Basis/L1-Basis-01-02.jpg)
+Midi Star network
 
 
 
