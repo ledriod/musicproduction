@@ -93,16 +93,19 @@ message is sent when you release the key of the controller
 - MIDI channel (1–16)
 - velocity (how hard you released the key, from 0 to 127, 0 - silence)
 
+__Aftertouch__  
+message that is sent after the (Note On) message. If you push a little bit harder on the key after hitting it, an extra message, called Aftertouch, is sent to the MIDI OUT. The Aftertouch message is usually assigned to control the vibrato effect of a sound, but  it can
+also affect other parameters, such as volume, pan, and more.
+- Monophonic aftertouch. affects the entire range of the keyboard no matter which key or keys triggered it.
+- Polyphonic aftertouch. allows you to send an independent message for each key. It is more flexible
 
-Monophonic aftertouch
+__Pitch bend__  
+pitch-bend wheel on a keyboard controller. It allows you to raise or lower the pitch of the notes being played. range > 128 steps, from 0 to 16,383. 
 
-Polyphonic aftertouch
+__Control changes__  
+synthesizer has a series of programs (also called patches, presets, instruments or, more generically, sounds) stored in its internal memory. for each MIDI channel we need to assign a patch that will play back. range of this message is 0 to 127. synthesizers can store many more than 128 sounds, nowadays programs are organized into banks , where each bank stores a maximum of 128 patches. necessary to combine a bank change message and a program change message. Most devices use CC#0 or CC#32 to change bank.
 
-Control changes
-
-Pitch bend
-
-Program change
+__Program change (CC)__  
 
 
 
