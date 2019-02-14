@@ -106,7 +106,12 @@ __Control changes__
 synthesizer has a series of programs (also called patches, presets, instruments or, more generically, sounds) stored in its internal memory. for each MIDI channel we need to assign a patch that will play back. range of this message is 0 to 127. synthesizers can store many more than 128 sounds, nowadays programs are organized into banks , where each bank stores a maximum of 128 patches. necessary to combine a bank change message and a program change message. Most devices use CC#0 or CC#32 to change bank.
 
 __Program change (CC)__  
-
+allow you to control certain parameters of a MIDI channel.  There are 128 CCs (0–127); that is, the range of each controller extends from 0 to 127.  
+the most important of these:
+- CC#1  modulation, activated by moving the modulation wheel (a slow vibrato effect)
+- CC#7  volume of a MIDI channel from 0 to 127
+- CC#10 pan, Value 0 is pan hard left, 127 is hard right and 64 is centered.
+- CC#64 sustain pedal (the notes played are held until the pedal is released). on (values ? 64) and off (values ? 63). p.9
 
 
 
