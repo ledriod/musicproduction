@@ -40,7 +40,7 @@ the pressure at the crests is higher than the prevailing atmospheric barometric 
 
 ## Waves
 
-__Wavelength and Frequency__
+### Wavelength and Frequency
 
 A sine wave is illustrated
 
@@ -51,7 +51,7 @@ Wavelength (m) = Speed of sound (m/sec) / Frequency (Hz)
 Frequency (Hz) = Speed of sound / Wavelength
 
 
-__Complex Waves__
+### Complex Waves
 
 Combining A and B at each point in time, the waveshape graph (C) is obtained. The process can be reversed.
 
@@ -60,7 +60,7 @@ Combining A and B at each point in time, the waveshape graph (C) is obtained. Th
 The complex waveform (E) can be disassembled to the simple f1 , f2 , and f3 sine components by either acoustical or electronic filters. 
 
 
-__Phase__
+### Phase
 
 In previouse picture, all three components, f1 , f2 , and f3 , start from zero together. This is called an in-phase condition.
 
@@ -73,6 +73,13 @@ the crankshaft of an automobile engine was equated with one cycle of simple harm
 - A half-wave delay would be 180°, and so on. 
 - For the 360° delay, the waveform synchronizes with the top one, reaching positive peaks and negative peaks simultaneously and producing the in-phase condition.
 
+![img](L1-Basis/L1-Basis-02-06-01.jpg)
+
+The phase angle is obtained by multiplying the angular velocity ω by the time t . Note that the angular velocity is measured in radians per second, whereas frequency f is measured in rotations per second or hertz. As a radian is unit distance at unit radius (about 57°), then there are 2 π radians in one rotation. Thus the phase angle at a time t is given by sinωt or sin2 πft .
+
+![img](L1-Basis/L1-Basis-02-06-02.jpg)
+
+ When plotted on the same graph, the two waveforms are phase shifted with respect to one another. 
 
 
 ## Harmonic analysis
