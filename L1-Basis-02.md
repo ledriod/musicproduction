@@ -135,4 +135,59 @@ An acoustical system can be represented in terms of an equivalent electrical or 
 
 
 
+## Sound Levels and the Decibel
+
+### The Decibel
+
+The decibel is a logarithmic measuring system and has its origins in telephony where the loss in a cable is a logarithmic function of the length. Human hearing also has a logarithmic response with respect to sound pressure level. In order to relate to the subjective response, audio signal level measurements also have to be logarithmic and so the decibel was adopted for audio.
+
+- log(1)=0     ;  `10**0 is 1`
+- log(100)=2   ;  `10**2 is 100`
+- log(300)=2.47;
+- log(1000)=3  ;  `10**3 is 1000`
+
+Logarithms were developed by mathematicians before the availability of calculators or computers to ease calculations such as multiplication, squaring, division, and extracting roots. The advantage is that, armed with a set of log tables, multiplication can be performed by adding and division by subtracting. 
+
+- 2 * 4 = ?
+- log 2 + log 4
+- 0.30103 + 0.6020599 = 0.9030899
+- antilog 0.9030899 = 8
+
+The logarithmic unit of measurement in telephones was called the Bel after Alexander Graham Bell, the inventor. Figure shows that the Bel was defi ned as the log of the power ratio between the power to be measured and some reference power. Clearly the reference power must have a level of 0 Bels, as log 10 1 is 0.
+
+![img](L1-Basis/L1-Basis-02-10.jpg)
+
+The Bel was found to be an excessively large unit for practical purposes and so it was divided into 10 decibels, abbreviated dB with a small d and a large B and pronounced `deebee`. Consequently, the number of dBs is 10 times the log of the power ratio. 
+
+- the reference is 1 mW into 600 Ω the units will be dB(m)
+- the dB(W) , which is power relative to 1 W, in radio engineering
+- in audio are often done by measuring the signal voltage using 0.775 V as a reference in a circuit whose impedance is not necessarily 600 Ω 
+
+on picture above graph(b), shows that as the power is proportional to the square of the voltage, the power ratio will be obtained by squaring the voltage ratio. As squaring in logs is performed by doubling, the squared term of the voltages can be replaced by multiplying the log by a factor of two. To give a result in dBs, the log of the voltage ratio now has to be multiplied by 20.
+
+![img](L1-Basis/L1-Basis-02-11.jpg)
+
+Modern practice is to use low-output impedance sources with high-impedance loads. In professional analog audio systems, impedance matching is not only unnecessary but also undesirable. 
+
+- Voltages measured in this way are expressed in dB(u), the most common unit of level in modern analog systems. The reference remains at 0.775 V. 
+
+-  a sound-level meter reading is a certain sound-pressure level (SPL), 20 log (p/p ref ). For sound in air the standard reference pressure is 20 μPa (micropascals). This is a very small sound pressure and corresponds closely to the threshold of human hearing at 1 kHz. 
+
+![img](L1-Basis/L1-Basis-02-12.jpg)
+
+
+### Acoustic Power
+
+A 100-W amplifier may be driving a loudspeaker, but loudspeaker efficiency (output for a given input) is very low, perhaps on the order of 10%. A typical loudspeaker might radiate 1 W of acoustic power. 
+
+Doubling amplifier power from 1 to 2 W is a 3-dB increase in power level (10 log 2 = 3.01). Similarly, an increase in power from 100 to 200 W or 1,000 to 2,000 W yields the same 3-dB increase in level. 
+
+![img](L1-Basis/L1-Basis-02-13.jpg)
+
+lists sound pressure and sound-pressure levels of some common sounds. There is a vast difference in sound pressure from 0.00002 Pa (20 μPa) to 100,000 Pa, but this range is reduced to a convenient form when expressed in sound levels. 
+
+![img](L1-Basis/L1-Basis-02-14.jpg)
+
+
+
 
