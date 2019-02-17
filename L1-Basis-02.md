@@ -74,6 +74,7 @@ the crankshaft of an automobile engine was equated with one cycle of simple harm
 - For the 360° delay, the waveform synchronizes with the top one, reaching positive peaks and negative peaks simultaneously and producing the in-phase condition.
 
 
+
 ## Harmonic analysis
 
 [wiki: Harmonic analysis](https://en.wikipedia.org/wiki/Harmonic_analysis)
@@ -88,13 +89,41 @@ Bass-guitar time signal of open-string A note (55 Hz)
 
 Fourier transform of bass-guitar time signal of open-string A note (55 Hz)
 
+__Harmonics__
+
+- 100 Hz, base signal
+- 200 Hz, 2 harmonic
+- 300 Hz, 3 harmonic
+- 400 Hz, 4 harmonic
+- 500 Hz, 5 harmonic
+- 600 Hz, 6 harmonic
+- 700 Hz, 7 harmonic
+- 800 Hz, 8 harmonic
+
+
+__Spectrum__
+
+The commonly accepted scope of the audible spectrum is 20 Hz to 20 kHz; the range is one of the specific characteristics of the human ear. Here, in the context of sine waves and harmonics, we need to establish the concept of spectrum.
+
+several waveform have been captured from the screen of an oscilloscope. To the right of each capture is the spectrum of that particular signal. The spectrum tells how the energy of the signal is distributed in frequency. 
+
+![img](L1-Basis/L1-Basis-02-07.jpg)
+
+the spectrum of the square wave shown in picture, graph(C).
+
+![img](L1-Basis/L1-Basis-02-08.jpg)
+
+picture shows a square wave; it can be synthesized by adding harmonics to a fundamental. However, many harmonics would be needed. For example, graph(B) shows the waveform that results from adding two nonzero harmonic components, and graph(C) shows the result from adding nine nonzero harmonic components. This demonstrates why a bandlimited “square wave” does not have a square appearance.
 
 
 
+## Electrical, Mechanical, and Acoustical waves
 
+An acoustical system can be represented in terms of an equivalent electrical or mechanical system, the mathematical approach is the same for different oscillators.
 
+- acoustical system: loudspeaker
 
-
+![img](L1-Basis/L1-Basis-02-09.jpg)
 
 
 
