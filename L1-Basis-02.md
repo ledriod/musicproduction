@@ -61,6 +61,22 @@ The complex waveform (E) can be disassembled to the simple f1 , f2 , and f3 sine
 
 
 
+### Harmonic analysis
+
+[wiki: Harmonic analysis](https://en.wikipedia.org/wiki/Harmonic_analysis)
+
+Harmonic analysis is a branch of mathematics concerned with the representation of functions or signals as the superposition of basic waves, and the study of and generalization of the notions of Fourier series and Fourier transforms (i.e. an extended form of Fourier analysis). 
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Bass_Guitar_Time_Signal_of_open_string_A_note_%2855_Hz%29.png/640px-Bass_Guitar_Time_Signal_of_open_string_A_note_%2855_Hz%29.png)
+
+Bass-guitar time signal of open-string A note (55 Hz)
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Fourier_Transform_of_bass_guitar_time_signal.png/640px-Fourier_Transform_of_bass_guitar_time_signal.png)
+
+Fourier transform of bass-guitar time signal of open-string A note (55 Hz)
+
+
+
 
 
 
