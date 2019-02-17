@@ -190,4 +190,38 @@ lists sound pressure and sound-pressure levels of some common sounds. There is a
 
 
 
+### Using Decibels
+
+__Example 1: Sound-Pressure Level__
+A sound-pressure level (SPL) is 78 dB. What is the sound pressure?
+
+
+__Example 2: Loudspeaker SPL__
+An input of 1 W produces a SPL of 115 dB at 1 m. What is the SPL at 6.1 m (20 ft)?
+
+
+__Example 3: Microphone Specifications__
+An omnidirectional dynamic microphone open-circuit voltage is specified as −80 dB for the 150-Ω case. It is also specified that 0 dB = 1 V/μbar. What would be the open-circuit voltage n in volts?
+
+
+__Example 4: Line Amplifier__
+A line amplifier (600 Ω in, 600 Ω out) has a gain of 37 dB. With an input of 0.2 V, what is the output voltage?
+
+
+__Example 5: General-Purpose Amplifier__
+An amplifier has a bridging input impedance of 10,000 Ω and an output impedance of 600 Ω. With a 50-mV input, an output of 1.5 V is observed. What is the gain of the amplifier?
+
+
+__Example 6: Concert Hall__
+A seat in a concert hall is 84 ft from the tympani. The tympanist strikes a single note. The sound-pressure level of the direct sound of the note at the seat is measured to be 55 dB. The first reflection from the nearest sidewall arrives at the seat 105 msec after the arrival of the direct sound. 
+- (A) How far does the reflection travel to reach the seat? 
+- (B) What is the SPL of the reflection at the seat, assuming perfect reflection at the wall?
+- (C) How long will the reflection be delayed after arrival of the direct sound at the seat?
+
+
+
+
+
+
+
 
