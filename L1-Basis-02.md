@@ -188,6 +188,9 @@ lists sound pressure and sound-pressure levels of some common sounds. There is a
 
 ![img](L1-Basis/L1-Basis-02-14.jpg)
 
+Relative levels are useful for live work. Absolute levels are useful for equipment specifications and calibration. The picture below shows some references used for determining absolute levels.
+
+![img](L1-Basis/L1-Basis-02-15.jpg)
 
 
 ### Using Decibels
@@ -220,8 +223,28 @@ A seat in a concert hall is 84 ft from the tympani. The tympanist strikes a sing
 
 
 
+## Human Hearing
 
+The human auditory system is an amazing device, and it is quite complex. Its job is to transduce fluctuations in the ambient atmospheric pressure into electrical signals that will be processed by the brain and perceived as sound by the listener. We will look at a few characteristics of the human auditory system that are of significance to audio practitioners.
 
+The dynamic range of a system describes the difference between the highest level that can pass through the system and its noise floor. The threshold of human hearing is about 0.00002 Pascals (Pa) at mid frequencies. The human auditory system can withstand peaks of up to 200 Pa at these same frequencies. 
+
+This makes the dynamic range of the human auditory system approximately: `DR = 20 log (200/0.00002) = 140 dB`
+
+- Speech systems are often designed for 80 dB ref. 20 μPa
+- music systems about 90 dB ref. 20 μPa for the mid-range part of the spectrum.
+
+- Audio engineers give much attention to achieving a flat spectral response. 
+- The human auditory system is not flat and its response varies with level. 
+- At low levels, its sensitivity to low frequencies is much less than its sensitivity to mid-frequencies. 
+- As level increases, the difference between low- and mid-frequency sensitivity is less, producing a more uniform spectral response. 
+- The classic equal loudness contours, picture below, describe this phenomenon and have given us the weighting curves
+
+![img](L1-Basis/L1-Basis-02-16.jpg)
+
+The time response of the hearing system is slow compared to the number of audible events that can occur in a given time span. As such, our hearing system integrates closely spaced sound arrivals (within about 35 ms) with regard to level. This is what makes sound indoors appear louder than sound outdoors. While reflected sound increases the perceived level of a sound source, it also adds colorations. This is the heart of how we perceive acoustic instruments and auditoriums. A good recording studio or concert hall produces a musically pleasing reflected sound field to a listener position. In general, secondary energy arrivals pose problems if they arrive earlier than 10 ms (severe tonal coloration) after the first arrival or later than 50 ms (potential echo), picture below.
+
+![img](L1-Basis/L1-Basis-02-17.jpg)
 
 
 
