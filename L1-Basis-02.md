@@ -242,9 +242,26 @@ This makes the dynamic range of the human auditory system approximately: `DR = 2
 
 ![img](L1-Basis/L1-Basis-02-16.jpg)
 
+The equal loudness contours also show that human hearing is most sensitive around 4 kHz (which is where the hearing damage due to loud soundsfirst happens), less sensitive to high frequencies, and much less sensitive for very low frequencies (which is why a subwoofer has to be very powerful to produce strong bass, the price of which is the masking of mid-and high-frequencies and potential hearing damage). A study of this family of curves tells us why treble and bass frequencies seem to be missing or down in level when favorite recordings are played back at low levels. 
+
 The time response of the hearing system is slow compared to the number of audible events that can occur in a given time span. As such, our hearing system integrates closely spaced sound arrivals (within about 35 ms) with regard to level. This is what makes sound indoors appear louder than sound outdoors. While reflected sound increases the perceived level of a sound source, it also adds colorations. This is the heart of how we perceive acoustic instruments and auditoriums. A good recording studio or concert hall produces a musically pleasing reflected sound field to a listener position. In general, secondary energy arrivals pose problems if they arrive earlier than 10 ms (severe tonal coloration) after the first arrival or later than 50 ms (potential echo), picture below.
 
 ![img](L1-Basis/L1-Basis-02-17.jpg)
+
+__Precedence (Hass) Effect__
+
+When two clicks are presented simultaneously to a listener, one on the left and one on the right, the listener would perceive a click in front — i.e., average the localization cues of the two clicks. However, if one of the clicks is delayed (up to 5 ms) compared to the other, the listener still perceives them as one fused click but will localize the fused image with cues of the first click only and ignore the localization cue of the later one. For delays longer than 5 ms, the listener will hear two distinct clicks instead of one fused click. For speech, music or other complex signals, this upper limit can be increased to about 40 ms. This phenomenon that the auditory system localizes on the first arrival is called precedence effect, or Haas effect
+
+
+
+## Noise Floor
+
+__Noise Criteria__
+
+When specifying permissible noise levels, it is customary to use some form of the noise criteria (NC). The beauty of the NC contours is that a spectrum specification is inherent in a single NC number. The NC contours of picture are helpful in setting a background noise goal for a sound room.
+
+In 1989 Beranek proposed the NCB or Balanced Noise Criteria. 3 The NCB adds the 16 Hz octave band and the slopes of the curves are somewhat modified relative to the NC or PNC curves
+
 
 
 
