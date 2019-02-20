@@ -139,6 +139,25 @@ Such filters can be made to have a linear phase response if required, resulting 
 
 
 
+### D/A conversion
+
+The basic D/A conversion process is shown on the picture below. 
+
+![pic](L1-Basis/L1-Basis-03-17.jpg)
+
+Audio sample words are converted back into a staircase-like chain of voltage levels corresponding to the sample values. This is achieved in simple convertors by using the states of bits to turn current sources on or off, making up the required pulse amplitude by the combination of outputs of each of these sources. This staircase is then
+‘resampled’ to reduce the width of the pulses before they are passed through a low-pass reconstruction filter whose cut-off frequency is half the sampling frequency. The effect of the reconstruction filter is to join up the sample points to make a smooth waveform. Resampling is necessary to avoid any discontinuities in signal amplitude at sample boundaries and because otherwise the averaging effect of the filter would result in a reduction in the amplitude of high-frequency audio signals (the so-called ‘aperture effect’). Aperture effect may be reduced by limiting the width of the sample pulses to perhaps one-eighth of the sample period. Equalisation may be required to correct for aperture effect.
+
+
+
+
+### Rotary Head Digital Recorders
+
+The rotary head recorder has the advantage that the spinning heads create a high head-to-tape speed, offering a high bit rate recording without high linear tape speed. Picture below shows a representative block diagram of a rotary head machine. Following the convertors, a compression process may be found. In an uncompressed recorder, there will be distribution of odd and even samples for concealment purposes. An interleaved product code will be formed prior to the channel coding stage, which produces the recorded waveform. 
+
+![pic](L1-Basis/L1-Basis-03-18.jpg)
+
+
 
 
 
