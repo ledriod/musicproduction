@@ -108,3 +108,38 @@ lution of greater than 16 bits is desirable for original recording.
 Twenty and 24 bit recording formats are becoming increasingly popular for this reason, with mastering engineers then optimising the finished recording for 16 bit media (such as CD) using noise-shaped requantising processes.
 
 
+
+### Dither in A/D conversion
+
+The use of dither in A/D conversion, as well as in conversion between one sample resolution and another, is now widely accepted as correct. It has the effect of linearising a normal convertor (in other words it effectively makes each quantising interval the same size) and turns quantising distortion into a random, noise-like signal at all times. 
+
+- white noise at a very low level is less subjectively annoying than distortion
+- it allows signals to be faded smoothly down without the sudden disappearance noted above
+- it allows signals to be reconstructed even when their level is below the noise floor of the system
+- Undithered audio signals begin to sound ‘grainy’ and distorted as the signal level falls
+
+![pic](L1-Basis/L1-Basis-03-14.jpg)
+
+
+### Oversampling in A/D conversion
+
+Oversampling involves sampling audio at a higher frequency than strictly necessary to satisfy the Nyquist criterion. 
+
+Although oversampling A/D convertors often quote very high sampling rates of up to 128 times the basic rates of 44.1 or 48 kHz, the actual rate at the digital output of the convertor is reduced to a basic rate or a small multiple thereof (e.g. 48, 96 or 192 kHz). Samples acquired at the high rate are quantised to only a few bits’ resolution and then digitally filtered to reduce the sampling rate, as shown on picture below. 
+
+![pic](L1-Basis/L1-Basis-03-15.jpg)
+
+The digital low-pass filter limits the bandwidth of the signal to half the basic sampling frequency in order to avoid aliasing, and this is coupled with ‘decimation’. Decimation reduces the sampling rate by dropping samples from the oversampled stream. A result of the low-pass filtering operation is to increase the word length of the samples very considerably.
+
+Oversampling brings with it a number of benefits and is the key to improved sound quality at both the A/D and D/A ends of a system. Because the initial sampling rate is well above the audio range (often tens or hundreds of times the nominal rate) the spectral repetitions resulting from PAM are a long way from the upper end of the audio band (see picture below). The analogue anti-aliasing filter used in conventional convertors is replaced by a digital decimation filter. 
+
+![pic](L1-Basis/L1-Basis-03-16.jpg)
+
+Such filters can be made to have a linear phase response if required, resulting in higher sound quality. If oversampling is also used in D/A conversion the analogue reconstruction filter can have a shallower roll-off. This can have the effect of improving phase linearity within the audio band, which is known to improve audio quality. In oversampled D/A conversion, basic rate audio is up-sampled to a higher rate before conversion and reconstruction filtering. Oversampling also makes it possible to introduce so-called ‘noise shaping’ into the conversion process, which allows quantising noise to be shifted out of the most audible parts of the spectrum.
+
+
+
+
+
+
+
