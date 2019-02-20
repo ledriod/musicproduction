@@ -56,5 +56,55 @@ Quantising error is an inevitable side effect in the process of A/D conversion a
 - 8 bit scale offers 256 steps
 - 16 bit scale 65 536
 
+The quantising error magnitude will be a maximum of plus or minus half the amplitude of one quantising step and a greater number of bits per sample will therefore result in a smaller error, provided that the analogue voltage range represented remains the same.
+
+![pic](L1-Basis/L1-Basis-03-08.jpg)
+
+The picture below shows the binary number range covered by digital audio signals at different resolutions using the usual two’s complement hexadecimal representation. It will be seen that the maximum positive sample value of a 16 bit signal is &7FFF, whilst the maximum negative value is &8000. The sample value changes from all zeros (&0000) to all ones (&FFFF) as it crosses the zero point. The maximum digital signal level is normally termed 0 dBFS (FS = full scale).
+
+![pic](L1-Basis/L1-Basis-03-09.jpg)
+
+
+__serial or parallel__
+
+Electrically it is possible to represent the quantised binary signal in either serial or parallel form. 
+
+When each bit of the audio sample is carried on a separate wire, the signal is said to be in a parallel format, so a 16 bit convertor would have 16 single bit outputs. If the data is transmitted down a single wire or channel, one bit after the other, the data is said to be in serial format. In serial communication the binary word is clocked out one bit at a time using a device known as a shift register.The shift register is previously loaded with the word in parallel form as shown in the diagram.The rate at which the serial data is transferred depends on the rate of the clock. 
+
+Serial form is most useful for transmission over interconnects or transmission links that might cover substantial distances or where the bulk and cost of the interconnect limits the number of paths available. Parallel form tends to be used internally, within high speed digital systems, although serial forms are increasingly used here as well. Most digital audio interfaces are serial, for example, although the Tascam TDIF interface uses a parallel representation of the audio data.
+
+![pic](L1-Basis/L1-Basis-03-10.jpg)
+
+
+### Quantising resolution and sound quality
+
+The quantising error may be considered as an unwanted signal added to the wanted signal, as shown on the picture below. Unwanted signals tend to be classified either as distortion or noise, depending on their characteristics, and the nature of the quantising error signal depends very much upon the level and nature of the related audio signal. 
+
+![pic](L1-Basis/L1-Basis-03-11.jpg)
+
+__Dynamic range and perception__
+
+It is possible with digital audio to approach the limits of human hearing in terms of sound quality. In other words, the unwanted artefacts of the process can be controlled so as to be close to or below the thresholds of perception. It is also true, though, that badly engineered digital audio can sound poor and that the term ‘digital’ does not automatically imply high quality.The choice of sampling parameters and noise shaping methods, as well as more subtle aspects of convertor design, affect the frequency response, distortion and perceived dynamic range of digital audio signals.
+
+The human ear’s capabilities should be regarded as the standard against which the quality of digital systems is measured, since it could be argued that the only distortions and noises that matter are those that can be heard. Work carried out by Louis Fielder and Elizabeth Cohen attempted to establish the dynamic range requirements for high quality digital audio systems by investigating the extremes of sound pressure available from acoustic sources and comparing these with the perceivable noise floors in real acoustic environments. Using psychoacoustic theory, Fielder was able to show what was likely to be heard at different frequencies in terms of noise and distortion, and where the limiting elements might be in a typical recording chain. 
+
+He determined a dynamic range requirement of 122 dB for natural reproduction.Taking into account microphone performance and the limitations of consumer loudspeakers, this requirement dropped to 115 dB for consumer systems.
+
+The dynamic range of a digital audio system is limited at high signal levels by the point at which the quantising range of the convertor has been ‘used up’ (in other words, when there are no more bits available to represent a higher level signal). At this point the waveform will be hard clipped (see picture below) and will become very distorted. This point will normally be set to occur at a certain electrical input voltage, such as +24 dBu in some professional systems. 
+
+![pic](L1-Basis/L1-Basis-03-12.jpg)
+
+The number of bits per sample therefore dictates the signal-to-noise ratio of a linear PCM digital audio system. The picture below summarises the applications for different quantising resolutions.
+
+![pic](L1-Basis/L1-Basis-03-13.jpg)
+
+- This is the CD standard and is capable of offering a good S/N ratio range of over 90 dB. 
+- A/D resolution of around 21 bits, to reach the psychoacoustic ideal of 122 dB for subjectively noise-free reproduction in professional systems
+- 24 bit convertors are indeed available today, but their audio performance is strongly dependent upon the stability of the timing clock, electrical environment, analogue stages, grounding and other issues.
+
+__head-room__ - – in other words some unused dynamic range above the normal peak recording level which can be used in unforeseen circumstances such as when a signal overshoots its expected level. This can be particularly necessary in live recording situations where one is never quite sure what is going to happen with recording levels. This is another reason why many professionals feel that a reso-
+lution of greater than 16 bits is desirable for original recording.
+
+Twenty and 24 bit recording formats are becoming increasingly popular for this reason, with mastering engineers then optimising the finished recording for 16 bit media (such as CD) using noise-shaped requantising processes.
 
 
